@@ -5,3 +5,6 @@
 `define RACKBUS_RUNCMD( x ) ( x[27:26] )
 `define RACKBUS_PPS( x ) ( x[30] )
 `define RACKBUS_IGNORE( x[31] )
+
+`define RACKBUS_RUNCMD_BITS 2
+`define RACKBUS_TRIG_BITS 15
