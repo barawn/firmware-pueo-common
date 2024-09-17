@@ -6,5 +6,8 @@
 `define RACKBUS_PPS( x ) ( x[30] )
 `define RACKBUS_IGNORE( x[31] )
 
+`define RACKBUS_PACK( ignore, pps, runcmd, mtype, mdata, trigvalid, trig )  \
+        ( { ignore, pps, 2'b00, runcmd, mtype, mdata, trigvalid, trig } )
+
 `define RACKBUS_RUNCMD_BITS 2
 `define RACKBUS_TRIG_BITS 15
