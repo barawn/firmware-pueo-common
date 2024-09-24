@@ -10,6 +10,11 @@
         ( { ignore, pps, 2'b00, runcmd, mtype, mdata, trigvalid, trig } )
 
 `define RACKBUS_RUNCMD_BITS 2
+`define RACKBUS_RUNCMD_NOOP (2'b00)
+`define RACKBUS_RUNCMD_SYNC (2'b01)
+`define RACKBUS_RUNCMD_RESET (2'b10)
+`define RACKBUS_RUNCMD_STOP (2'b11)
+
 `define RACKBUS_TRIG_BITS 15
 
 `define RACKBUS_MODE1_NOOP (8'h00)
